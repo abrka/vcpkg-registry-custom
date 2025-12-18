@@ -2,7 +2,7 @@ vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO abrka/opengl_lib
     REF 75cab72
-    SHA512 0
+    SHA512 10b531d9e97b63050f6356ab15ba3304468c1bb3c44ec59cb1f4717ebaacd87230703385f1b22562ceaf882e229670fba535a389f93e2737d426ed642857ecf8
     HEAD_REF master
 )
 
