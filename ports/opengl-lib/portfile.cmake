@@ -6,6 +6,11 @@ vcpkg_from_github(
     HEAD_REF master
 )
 
-vcpkg_cmake_configure(SOURCE_PATH ${SOURCE_PATH})
+vcpkg_cmake_configure(
+    SOURCE_PATH ${SOURCE_PATH}
+    OPTIONS 
+        -DOPENGL_LIB_BUILD_EXAMPLE=OFF
+)
+
 vcpkg_cmake_install()
 vcpkg_install_copyright("${SOURCE_PATH}/LICENSE")
