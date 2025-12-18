@@ -12,6 +12,6 @@ vcpkg_cmake_configure(
         -DOPENGL_LIB_BUILD_EXAMPLE=OFF
 )
 
-vcpkg_cmake_config_fixup(PACKAGE_NAME "opengl_lib" CONFIG_PATH "lib/cmake/opengl_lib")
 vcpkg_cmake_install()
+vcpkg_cmake_config_fixup(PACKAGE_NAME "opengl_lib" CONFIG_PATH "lib/cmake/opengl_lib")
 vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
