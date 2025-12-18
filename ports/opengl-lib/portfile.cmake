@@ -12,5 +12,7 @@ vcpkg_cmake_configure(
         -DOPENGL_LIB_BUILD_EXAMPLE=OFF
 )
 
+include(GNUInstallDirs)
+vcpkg_cmake_config_fixup(CONFIG_PATH ${CMAKE_INSTALL_LIBDIR}/cmake/opengl_lib)
 vcpkg_cmake_install()
-vcpkg_install_copyright("${SOURCE_PATH}/LICENSE")
+vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
